@@ -1,0 +1,32 @@
+@import "reset.scss";
+@import "typography.scss";
+@import "nav.scss";
+ 
+/****************************************
+STRUCTURES
+*****************************************/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;    
+  box-sizing: border-box;         
+}
+
+body {
+  background:url(../images/navy_blue.png);
+  overflow-x:hidden;
+  font-family:sans-serif;
+}
+
+section {
+	width:1100px;
+	margin:20px auto;
+	background:#f4f4f4;
+	border:1px solid darken(#f4f4f4,50%);
+	border-radius:2px;
+	box-shadow:0px 0px 10px rgba(0,0,0,1);
+	padding:20px;
+
+	@include breakpoint(1300) {
+		width:90%;
+	}
+}
